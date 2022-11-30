@@ -1,0 +1,46 @@
+@import "variables.less";
+
+body {
+	background: url(/images/background/body.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.options {
+	padding: 15px 15% 0;
+	min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.title {
+	margin: 15px 0;
+	font-size: 24px;
+}
+
+.option {
+	padding-bottom: 0;
+	height: auto;
+	position: relative;
+	
+	&:not(:last-of-type) {
+		border-bottom: 1px solid;
+		padding-bottom: 25px;
+	}
+	
+	.restore {
+		&-textarea {
+			width: 100%;
+			padding: 10px;
+			resize: none;
+		}
+		
+		&-title {
+			margin: 15px 0;
+			font-size: 18px;
+		}
+	}
+	
+	.device-name-input {
+		padding: 10px;
+	}
+}

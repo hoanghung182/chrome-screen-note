@@ -1,0 +1,32 @@
+@import "variables.less";
+
+#main-content {
+	outline: none;
+	background-color: rgba(0, 0, 0, .9);
+	box-shadow: 0 0 11px 4px @black;
+	min-height: 100vh;
+}
+
+.index {
+	background: url(/images/background/body.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+
+	.backup {
+		position: fixed;
+		bottom: 0;
+		left: 5px;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	#main-content {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1440px){
+	#main-content {
+		width: 60%;
+	}
+}

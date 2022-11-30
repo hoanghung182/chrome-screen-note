@@ -1,0 +1,113 @@
+@import "variables.less";
+
+*, html {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: @roboto-font-family;
+	font-size: 14px;
+}
+
+body,
+font,
+font style {
+	color: @white;
+}
+
+body {
+	background-color: @body-background;
+	line-height: 1.5;
+	letter-spacing: 1.5px;
+}
+
+#main-content {
+	width: 100%;
+	margin: auto;
+	padding: 50px;
+	font-size: 16px;
+	
+	b {
+		color: @yellow;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: @url;
+	
+	&:hover {
+		cursor: pointer;
+		text-decoration: underline;
+		color: @url-hover;
+	}
+}
+
+footer {
+	.author,
+	.switch {
+		position: fixed;
+		bottom: 0;
+		right: 10px;
+		font-size: 11px;
+		color: @white;
+		text-decoration: none;
+	}
+	
+	.switch {
+		bottom: 20px;
+		padding: 5px 5px 0 5px;
+	    background-color: @option-button;
+
+	    &:hover {
+	    	background-color: @option-button-hover;
+	    }
+	}
+}
+
+.button {
+	padding: 5px 15px;
+	margin: 5px;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		background-color: @button-hover;
+		color: @white;
+		transition: transform .1s ease-out;
+		transform: scale(1.1);
+	}
+}
+
+.require-field {
+	color: red;
+}
+
+.button,
+textarea,
+select,
+.device-name-input {
+	border: none;
+	box-shadow: none;
+	outline: none;
+	background-color: @button;
+	color: @button-text;
+
+	&:hover {
+		background-color: @button-hover;
+		color: @button-text-hover;
+	}
+}
+
+// styles for placeholder
+&:hover {
+	&::-webkit-input-placeholder {
+		background-color: @button-hover;
+		color: @button-text-hover;
+	}
+}
+
+.button:disabled {
+	cursor: not-allowed;
+	background-color: @gray;
+	color: @white;
+}
